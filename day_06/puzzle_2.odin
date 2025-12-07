@@ -26,8 +26,6 @@ main :: proc() {
 		delete(stacks)
 	}
 
-	last_encountered_symbol: rune
-
 	input_str := string(puzzle_input)
 	for line in strings.split_lines_iterator(&input_str) {
 		if len(line) < 1 do continue
